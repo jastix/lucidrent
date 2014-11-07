@@ -5,6 +5,16 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0.beta4'
 # Use jdbcpostgresql as the database for Active Record
 gem 'activerecord-jdbcpostgresql-adapter'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.0'
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+
+gem 'jar-dependencies', '~> 0.1.4'
+
+## Front-end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.0.beta1'
 # Use Uglifier as compressor for JavaScript assets
@@ -17,18 +27,9 @@ gem 'therubyrhino'
 gem 'jquery-rails', '~> 4.0.0.beta2'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-gem 'jar-dependencies', '~> 0.1.4'
-
 gem 'simple_form'
+gem 'bootstrap-sass', '~> 3.3.0'
+gem 'autoprefixer-rails'
 
 group :development do
   gem 'puma'

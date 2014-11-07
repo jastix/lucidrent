@@ -4,8 +4,12 @@
 # gem 'activerecord-jdbcpostgresql-adapter'
 #
 default: &default
-  adapter: postgresql
+  adapter:  postgresql
   encoding: unicode
+  username: jastix
+  password: '12345'
+  pool:     5
+  host:     localhost
 
 development:
   <<: *default

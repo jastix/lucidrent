@@ -34,7 +34,7 @@ gem 'autoprefixer-rails'
 group :development do
   gem 'puma'
   gem 'quiet_assets'
-  gem "spring-commands-rspec"
+  gem 'spring-commands-rspec'
   gem 'guard'
   gem 'guard-rails', require: false
   gem 'guard-rspec', require: false
@@ -49,7 +49,7 @@ group :test do
   gem 'capybara',    '~> 2.4'
   gem 'factory_girl_rails'
   gem 'launchy'
-  gem 'database_cleaner'
+  gem 'database_cleaner', require: false
   gem 'shoulda-matchers', require: false
   gem 'ffaker',           require: false
 end

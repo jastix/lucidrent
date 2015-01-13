@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+
+  get 'accommodations/index'
+
+  get 'accommodations/show'
+
+  get 'accommodations/new'
+
+  get 'accommodations/create'
+
+  get 'accommodations/edit'
+
+  get 'accommodations/update'
+
+  get 'accommodations/delete'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -25,7 +25,7 @@ feature "Homepage", type: :feature do
     it "contains latest listings" do
       visit '/'
       expect(page).to have_content("Latest listings")
-      expect(page).to have_css('listing', count: 3)
+      expect(page).to have_css('.listing', count: 3)
     end
   end
 end

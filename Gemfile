@@ -1,19 +1,19 @@
-# ruby '1.9.3', engine: 'jruby', engine_version: '1.7.16'
-ruby '2.2.0'
+ ruby '1.9.3', engine: 'jruby', engine_version: '1.7.19'
+# ruby '2.2.0'
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
-gem 'pg'
+gem 'rails', '4.2.1'
+# gem 'pg'
 # Use jdbcpostgresql as the database for Active Record. Jruby
-# gem 'activerecord-jdbcpostgresql-adapter'
+gem 'activerecord-jdbcpostgresql-adapter'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# gem 'jar-dependencies', '~> 0.1.4'
+gem 'jar-dependencies', '~> 0.1.4'
 
 ## Front-end
 
@@ -56,4 +56,4 @@ group :test do
   gem 'ffaker',           require: false
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

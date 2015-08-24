@@ -1,12 +1,10 @@
- ruby '1.9.3', engine: 'jruby', engine_version: '1.7.19'
-# ruby '2.2.0'
+ruby '2.2.2', engine: 'jruby', engine_version: '9.0.0.0'
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
-# gem 'pg'
+gem 'rails', '~> 4.2.4'
 # Use jdbcpostgresql as the database for Active Record. Jruby
-gem 'activerecord-jdbcpostgresql-adapter'
+gem 'activerecord-jdbcpostgresql-adapter', github: "jruby/activerecord-jdbc-adapter", branch: "1-3-stable"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
@@ -27,8 +25,6 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'therubyrhino'
 # Use jQuery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
 gem 'simple_form'
 gem 'foundation-rails'
 gem 'autoprefixer-rails'
